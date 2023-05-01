@@ -459,3 +459,15 @@ function deleteChar(button) {
 function deleteCurrentChar(button) {
   textarea.value = textarea.value.slice(1, textarea.value.length);
 }
+
+//Блок с назапнием операционной системы
+const nameSystem = document.createElement("div");
+nameSystem.classList.add("keyboard__name-system");
+
+document.body.append(nameSystem);
+
+// Добавляем внутреннюю верстку
+nameSystem.innerHTML = `
+    <p class="keyboard__name">Клавиатура создана в операционной системе Windows</p> 
+   
+    `;
