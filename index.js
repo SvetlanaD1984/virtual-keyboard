@@ -182,7 +182,7 @@ const buttons = [
       name1: "Caps Lock",
       name2: "",
       num: "30",
-      onclick: addText,
+      onclick: capsLock,
     },
     {
       name1: "A",
@@ -401,8 +401,6 @@ const buttons = [
   ],
 ];
 
-let isShiftActive = false;
-
 //ФУНКЦИОНАЛ КЛАВИАТУРЫ
 
 const mainContainer = document.createElement("div");
@@ -458,6 +456,20 @@ function deleteChar(button) {
 
 function deleteCurrentChar(button) {
   textarea.value = textarea.value.slice(1, textarea.value.length);
+}
+
+function capsLock(button) {
+  textarea.value = textarea.value.toUpperCase();
+}
+
+// Кнопка Shift
+let isShiftActive = false;
+function toShift(button) {
+  if (button) {
+    isShiftActive = true;
+  } else {
+    isShiftActive = false;
+  }
 }
 
 //Блок с назапнием операционной системы
