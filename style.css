@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: "Arial", serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keyboard__container {
+  background: #bbbbbb;
+}
+
+.keyboard__row {
+  display: flex;
+}
+
+.keyboard__button {
+  padding: 20px;
+  border: 1px solid black;
+  color: white;
+  background-color: grey;
+  margin: 5px 5px;
+}
+
+.keyboard__button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+.keyboard__button:active {
+  cursor: pointer;
+  background-color: #3e858e;
+  transform: translateY(20px);
+}
+
+.keyboard__name {
+  margin-top: 30px;
+}
+
+.keyboard__textarea {
+  width: 500px;
+  height: 200px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.keyboard__name-system {
+  margin-top: 30px;
+  text-align: center;
+}
